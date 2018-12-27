@@ -20,10 +20,9 @@ class Solution:
             if target in s:
                 regex = r'(' + target + r')'
                 matches = re.finditer(regex, s, overlapped=True)
-                if matches:
-                    indexes = [m.start(0) for m in matches]
-                    print(indexes)
-                    index_matches.extend(indexes)
+                indexes = [m.start(0) for m in matches]
+                print(indexes)
+                index_matches.extend(indexes)
 
         return list(set(index_matches))
 
