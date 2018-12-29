@@ -1,5 +1,6 @@
-from collections import defaultdict
+# https://leetcode.com/problems/group-anagrams/solution/
 
+from collections import defaultdict
 
 class Solution:
     def groupAnagrams(self, strs):
@@ -11,7 +12,7 @@ class Solution:
         for word in strs:
             deconstructed_words[''.join(sorted([i for i in word]))].append(word)
 
-        return deconstructed_words.values()
+        return list(deconstructed_words.values())
 
 
 solution = Solution()
