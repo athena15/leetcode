@@ -26,14 +26,6 @@ class Solution:
 			length = 0
 
 		print(longest)
-
-		# if i - d[v] > longest:
-		# 	longest = i - d[v]
-		# 	d[v] = i
-		# else:
-		# 	d[v] = i
-
-		print(longest)
 		return longest
 
 
